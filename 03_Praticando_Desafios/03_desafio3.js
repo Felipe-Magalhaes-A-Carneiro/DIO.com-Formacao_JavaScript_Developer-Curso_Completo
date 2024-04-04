@@ -11,10 +11,21 @@ Código Condição de pagamento:
 
 */
 
-let produtoValor = 20.00;
-let seDebito = 10;
-let seDinheiro = 15;
-let duasVezes = 0;
-let maisVezes = produtoValor * (10)
+let valorProduto = 20.00;
+const seDebito = 1;
+const seDinheiro = 0;
+const seDuasVezes = 0;
+const seAcimaDeDuas = 0;
 
-let aVista = produtoValor * (porcentagem / 100);
+if (seDebito === 1){
+    console.log("Valor do produto: R$" + valorProduto + "\nDesconto: 10%" + "\nTotal a pagar: R$" + (valorProduto - (valorProduto * 0.1)));
+
+} else if (seDinheiro === 1){
+    console.log("Valor do produto: R$" + valorProduto + "\nDesconto: 15%" + "\nTotal a pagar: R$" + (valorProduto - (valorProduto * 0.15)));
+
+} else if (seDuasVezes === 1) {
+    console.log("Valor do produto: R$" + valorProduto + "\nDesconto: Sem desconto" + "\nTotal a pagar: R$" + valorProduto);
+
+} else {
+    console.log("Valor do produto: R$" + valorProduto + "\nJuros: 10%" + "\nTotal a pagar: R$" + (valorProduto + (valorProduto * 0.1)));
+}
