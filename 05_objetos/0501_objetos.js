@@ -32,8 +32,7 @@ const copo = {
     tamanho: 11 + "cm",
 }
 
-console.log(copo.tamanho);
 console.log(copo);
-
+console.log(copo.tamanho);
 
 
