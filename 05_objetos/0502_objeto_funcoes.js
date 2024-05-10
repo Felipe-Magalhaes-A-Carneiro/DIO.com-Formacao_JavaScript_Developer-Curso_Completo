@@ -12,7 +12,7 @@ const pessoa = {
 
 pessoa.descrever();
 
-//Acessando dinamicamente valores e objetos. Uso de []
+//Acessando dinamicamente valores e objetos. Uso de [] 
 const atributo = "idade";
 
 console.log(pessoa[atributo]); //Saída: 31

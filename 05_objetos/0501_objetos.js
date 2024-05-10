@@ -1,6 +1,6 @@
 // Forma mais simples de criar um objeto (quando ocorrer o momento de atribuição, utilize duas chaves = { chave, valor } ):
 
-const teste = {  // declaração
+const teste = {  // declaração de um objeto
 
 };
 
