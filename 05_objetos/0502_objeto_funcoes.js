@@ -6,7 +6,7 @@ const pessoa = {
 
     descrever: function (){
         this // palavra reservada para assumeir o objeto no contexto aonde a function ela está reservada.
-        console.log('Meu nome é ' + this.nome + ' e minha idade é ' + this.idade + ' anos.');
+        console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade} anos.'`);
     }
 };
 

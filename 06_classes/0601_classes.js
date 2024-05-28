@@ -6,7 +6,7 @@ class Pessoa {  //Utilize letra maiúscula para a criação de classes
     idade;
 
     descrever(params) { //método: para criar um método, ou seja, uma função, não há a necessidade de declarar o nome 'function'
-        console.log('Meu nome é ' + this.nome + 'e minha idade é ' + this.idade);
+        console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade} anos.'`);
     }
 
 };
@@ -16,7 +16,7 @@ class Pessoa {  //Utilize letra maiúscula para a criação de classes
 //Uma 'instância' é o objeto que é uma 'ocorrência' de uma 'Pessoa':
 
 //Como 'instânciar':
-const felipe = new Pessoa(); //Dizendo que felipe é uma Pessoa
+const felipe = new Pessoa(); //Dizendo que identifique felipe como uma nova pessoa, logo utilize os valores pessoa nele
 
 console.log(felipe); // Saída: Pessoa { nome: undefined, idade: undefined }
 // Já que não houve atribuições, o resultado será undefined
