@@ -5,9 +5,15 @@
 
 // - Exemplo:
 class Pessoa {
+  nome;
+  idade;
+  anoDeNascimento;
+
     constructor(nome, idade) {
       this.nome = nome;
       this.idade = idade;
+      // Exemplos de controle possiveis detro do construtor
+      this.anoDeNascimento = 2024 - idade;
     }
   
     saudacao() { //Embora seja uma função, não há necessidade de escrever function quando ela é feita em uma class
@@ -22,5 +28,8 @@ class Pessoa {
 const pessoa1 = new Pessoa('João', 30);
 const pessoa2 = new Pessoa('Maria', 25);
 
-console.log(pessoa1.saudacao()); // Olá, meu nome é João e eu tenho 30 anos.
-console.log(pessoa2.saudacao()); // Olá, meu nome é Maria e eu tenho 25 anos.
+//console.log(pessoa1.saudacao()); // Olá, meu nome é João e eu tenho 30 anos.
+//console.log(pessoa2.saudacao()); // Olá, meu nome é Maria e eu tenho 25 anos.
+
+console.log(pessoa1);
+console.log(pessoa2);
